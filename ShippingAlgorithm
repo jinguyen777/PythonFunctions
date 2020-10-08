@@ -1,0 +1,19 @@
+def ground_or_drone(weight):
+  ground1=ground_shipping_c(weight)
+  drone1=drone_shipping_c(weight)
+  premium1=125
+  if ground1<drone1 and ground1<premium1:
+    print("Ground Shipping is Cheaper")
+    print("It will cost "+str(ground1)+" dollars to ship "+str(weight)+" pounds using this method")
+  elif drone1<ground1 and drone1<premium1:
+    print("Drone Shipping is Cheaper")
+    print("It will cost "+str(drone1)+" dollars to ship "+str(weight)+" pounds using this method")
+  elif premium1<drone1 and premium1<ground1:
+    print("Premium Shipping is Cheaper")
+    print(("\nIt will cost "+str(premium1)+" dollars to ship "+str(weight)+" pounds using this method"))
+  else:
+    print("\nsomething costs the same as the other.")
+  print("Drone Shipping Costs: "+str(ground1) +" dollars.")
+  print("Drone Shipping Costs: "+str(drone1)+ " dollars.")
+  print("Premium Shipping Costs: "+str(premium1)+ " dollars.")
+    
